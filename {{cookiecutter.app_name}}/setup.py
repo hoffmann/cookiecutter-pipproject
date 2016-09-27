@@ -31,7 +31,12 @@ def setup_package():
         include_package_data=True,
         author='{{cookiecutter.full_name}}',
         install_requires=install_requires,
-        author_email='{{cookiecutter.email}}'
+        author_email='{{cookiecutter.email}}',
+        entry_points={
+          'console_scripts': [
+              '{{cookiecutter.app_name}} = {{cookiecutter.app_name}}:main'
+          ]
+       },
     )
 
 if __name__ == "__main__":
