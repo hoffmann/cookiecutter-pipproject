@@ -31,7 +31,6 @@ def setup_package():
         include_package_data=True,
         author='{{cookiecutter.full_name}}',
         install_requires=install_requires,
-        dependency_links=dependency_links,
         author_email='{{cookiecutter.email}}'
     )
 
