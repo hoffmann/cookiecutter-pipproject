@@ -29,6 +29,7 @@ def setup_package():
         include_package_data=True,
         author='{{cookiecutter.full_name}}',
         install_requires=install_requires,
+        tests_require=['pytest_cov', 'pytest'],
         author_email='{{cookiecutter.email}}',
         entry_points={
           'console_scripts': [
