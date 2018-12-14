@@ -16,8 +16,6 @@ def setup_package():
         name='{{cookiecutter.app_name}}',
         description='{{cookiecutter.project_short_description}}',
         long_description=long_description,
-        url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}',
-        license='BSD',
         classifiers=[
           'Programming Language :: Python',
         ],
@@ -30,7 +28,6 @@ def setup_package():
         author='{{cookiecutter.full_name}}',
         install_requires=install_requires,
         tests_require=['pytest_cov', 'pytest'],
-        author_email='{{cookiecutter.email}}',
         entry_points={
           'console_scripts': [
               '{{cookiecutter.app_name}} = {{cookiecutter.app_name}}:main'
